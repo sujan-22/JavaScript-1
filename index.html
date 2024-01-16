@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Author: Sujan Rokad, 000882948-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="./assign1.css" type="text/type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+
+        .animated-text {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            animation: wave-animation 10s linear infinite;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                color: rgb(207, 0, 0);
+                transform: translateX(-50%);
+            }
+            20% {
+                color: rgb(36, 22, 101);
+                transform: translateX(0%);
+            }
+            40% {
+                color: rgb(1, 0, 3);
+                transform: translateX(50%);
+            }
+            60% {
+                color: rgb(38, 41, 38);
+                transform: translateX(0%);
+            }
+            80% {
+                color: blue;
+                transform: translateX(-50%);
+            }
+            100% {
+                color: rgb(23, 31, 4);
+                transform: translateX(0%);
+            }
+        }
+
+        header, nav, body {
+            background-image: url("poetry.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main div {
+            text-align: center;
+        }
+
+        .poet {
+            margin: auto;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        .caption p {
+            font-weight: normal;
+            margin-right: 2em;
+            font-size: small;
+        }
+
+        main img {
+            margin: 1em;
+        }
+
+       
+        .mangelou {
+            grid-column: 1;
+        }
+
+        .caption {
+            font-size: 1em;
+            font-family:'Times New Roman', Times, serif ;
+        }
+
+        .caption a {
+            text-decoration: none;
+            color: black;
+            animation: img 2s infinite ;
+        }
+
+        .caption {
+            transition: all 2s ;
+        }
+
+        .source {
+            text-align: right;
+        }
+
+        .caption:hover {
+            transform: translateY(5px);
+        }
+
+        .text-end {
+            grid-column: 1;
+            grid-row: 1;
+            margin-top: 1em;
+        }
+
+        nav {
+            margin: 2em;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+        }
+
+        .nav-item {
+            margin: 1em 10px 1em 10px;
+        }
+
+        footer p {
+            text-align: center;
+            border-top: 2px solid blue;
+            font-weight: bold;
+        }
+
+        .nav-item {
+            transition: all 0.3s;
+        }
+
+        .nav-item:hover {
+            transform: translateY(10px);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <div class="animated-text">
+                <span>Poem</span>
+            </div>
+        
+    </header>
+
+    <nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Poetry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Untitled-1.html">Description</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm">   
+                    <div class="mangelou">
+                        <img src="./mangelou.jpg"  alt="mangelou">
+                        <p class="caption"><a href="https://en.wikipedia.org/wiki/Maya_Angelou">Maya Angelou (1928-2014)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="text-end">
+                        <div>
+                            <p class="poet">You may write me down in history</p>
+                            <p class="poet">With your bitter, twisted lies,</p>
+                            <p class="poet">You may trod me in the very dirt</p>
+                            <p class="poet">But still, like dust, I’ll rise.</p>
+                        </div>
+                        <div>
+                            <p class="poet">Does my sassiness upset you?</p>
+                            <p class="poet">Why are you beset with gloom?</p>
+                            <p class="poet">’Cause I walk like I’ve got oil wells</p>
+                            <p class="poet">Pumping in my living room.</p>
+                            <p class="poet">Just like moons and like suns,</p>
+                            <p class="poet">With the certainty of tides,</p>
+                            <p class="poet">Just like hopes springing high,</p>
+                            <p class="poet">Still I’ll rise.
+                        </div>
+                        <div>
+                            <p class="poet">Did you want to see me broken?</p>
+                            <p class="poet">Bowed head and lowered eyes?</p>
+                            <p class="poet">Shoulders falling down like teardrops,</p>
+                            <p class="poet">Weakened by my soulful cries?</p>
+                        <div>
+                        </div>
+                            <p class="poet">Does my haughtiness offend you?</p>
+                            <p class="poet">Don’t you take it awful hard</p>
+                            <p class="poet">’Cause I laugh like I’ve got gold mines</p>
+                            <p class="poet">Diggin’ in my own backyard.</p>
+                        <div>
+                        </div>
+                            <p class="poet">You may shoot me with your words,</p>
+                            <p class="poet">You may cut me with your eyes,</p>
+                            <p class="poet">You may kill me with your hatefulness,</p>
+                            <p class="poet">But still, like air, I’ll rise.</p>
+                        <div>
+                        </div>
+                            <p class="poet">Does my sexiness upset you?</p>
+                            <p class="poet">Does it come as a surprise</p>
+                            <p class="poet">That I dance like I’ve got diamonds</p>
+                            <p class="poet">At the meeting of my thighs?</p>
+                        <div> 
+                        </div>
+                            <p class="poet">Out of the huts of history’s shame</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">Up from a past that’s rooted in pain</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">I’m a black ocean, leaping and wide,</p>
+                            <p class="poet">Welling and swelling I bear in the tide.</p>
+                        <div>
+                        </div>
+                            <p class="poet">Leaving behind nights of terror and fear</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">Into a daybreak that’s wondrously clear</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">Bringing the gifts that my ancestors gave,</p>
+                            <p class="poet">I am the dream and the hope of the slave.</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">I rise</p>
+                            <p class="poet">I rise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Source: https://poets.org/poem/still-i-rise -->
+            <div class="caption">
+                <p class="source"><em>And Still I Rise </em>by Maya Angelou (1928-2014)</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm"><p>&#169;Sujan Rokad - Mohawk College</p></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
